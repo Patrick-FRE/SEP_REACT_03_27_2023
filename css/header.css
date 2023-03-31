@@ -1,0 +1,43 @@
+header {
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__subscribe{
+    color: #b1afaf;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+    margin-left: 20px;
+
+}
+
+.header__subscribe:hover {
+    color: #908d8d;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    flex: 1 ;
+    text-decoration: underline;
+}
+
+
+.header__search-icon-link img {
+    width: 50px;
+    height: 50px;
+}
+
+/* when search img hovered change color to red */
+.header__search-icon-link img:hover {
+    filter: invert(100%);
+}

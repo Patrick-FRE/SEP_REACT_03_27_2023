@@ -1,0 +1,76 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+/* Body */
+body {
+    width: 50rem;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0 auto;
+}
+
+
+
+
+/* Subsribe button styling */
+
+
+
+/* Main */
+main {
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+section {
+    width: 100%;
+}
+
+.blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-grid article {
+    /* this is the width of the article calculated by 50% of the parent's width minus 20px */
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+}
+
+.blog-grid__article-category--world {
+    color: #0578e3;
+    font-size: 15px;
+}
+
+.blog-grid__article-category--design {
+    color: #1fc665;
+    font-size: 15px;
+}
+
+article {
+    background-color: #fff;
+    box-shadow: 0px 1px 5px rgba(176, 25, 25, 0.1);
+    padding: 20px;
+    border: 7px solid #edebeb;
+    /* for hovered effect */
+    transition: border 0.2s ease-in-out;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .blog-grid article {
+        width: 100%;
+    }
+    
+}
