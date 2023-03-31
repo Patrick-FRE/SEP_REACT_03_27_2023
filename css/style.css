@@ -28,7 +28,7 @@ html, body {
 
 /* Main */
 main {
-    padding: 40px 0;
+    padding: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -107,10 +107,19 @@ article a {
 
 
 @media only screen and (max-width: 768px) {
+    .blog-grid{
+        flex-direction: column;
+    }
     .blog-grid article {
-        width: 100%;
+        /* this is the width of the article calculated by 50% of the parent's width minus 20px */
+        width: 100vw;
+
     }
     
+    main {
+        padding: 0;
+      
+    }
 .header__container {
     flex-direction: column;
 }
