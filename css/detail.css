@@ -42,6 +42,7 @@ h1 {
 }
 section {
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 
@@ -67,15 +68,22 @@ article p {
     font-size: 14px;
 }
 
-.blog-grid__article-excerpt{
-    padding-bottom: 5%;
-}
-.blog-grid__article-continue-reading-link{
-    position: absolute;
-    bottom: 10px;
+button {
+    color: #d1cbcb;
+    background-color: white;
 
-}
-
+    border: 2px solid #d1cbcb;
+    border-radius: 15px;
+    padding: 5px;
+    
+    margin-bottom: 3rem;
+  }
+  
+  button:hover {
+    color: lightskyblue;
+    border:2px solid lightskyblue;
+    
+  }
 
 
 .side_menu {
@@ -127,6 +135,8 @@ ul, ol{
     }
     
     main {
+        flex-direction: column;
+        width: 100vw;
         padding: 2rem;
       
     }
